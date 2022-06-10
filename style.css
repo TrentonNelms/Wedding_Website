@@ -1,0 +1,282 @@
+* {
+    /* Ivory Crepe - creme color */
+    /* background-color: #FFFFF8; */
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Nav bar */
+nav {
+    flex: 1;
+    text-align: right;
+    transition: all 0.5s;
+    
+}
+nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #989CA0;
+    font-family: Nugo Sans;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    transform: translateY(-5px);
+    color: #8470FF;
+}
+
+/* Our Names */
+.title {
+    display: absolute;
+    justify-content: space-between;
+    align-items: center;
+    font-family: josephsophia;
+    color: #8470FF;
+    font-size: 100px;
+    margin-top: -75px;
+}
+
+#venue {
+    font-family: Bebas Neue;
+    color: #8470FF;
+    font-size: 40px;
+    background: none;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 40px;
+    z-index: 1;
+}
+#address {
+    font-family: Bebas Neue;
+    color: #707070;
+    font-size: 35px;
+    background: none;
+    position: absolute;
+    margin-top: 47%;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+
+
+/* This is the text above the button */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50%;
+    font-family: josephsophia;
+    color: #8470FF;
+}
+.col-1 h2 {
+    font-size: 80px;
+}
+.col-1 h3 {
+    font-size:30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    margin-left: 160px;
+}
+/* Vertical Bar */
+.vertical_bar {
+    content: '';
+    width: 10px;
+    height: 45%;
+    background: linear-gradient(#8470FF, #E6E6FA);
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+/* RSVP Button */
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fffff8;
+    background: linear-gradient(to right, #7FFED4, #7FFED9);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    margin-left: 190px;
+    font-family: Bebas Neue;
+    font-size: 40px;
+    text-decoration: none;
+}
+button img {
+    color: fffff8;
+    width: 50px;
+    display: none;
+}
+button:hover img {
+    display: block;
+    background: none;
+}
+button:hover {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Shape Behind the image */
+ .colorbox {
+    position:absolute;
+    left: 0;
+    top: 20%;
+    background: linear-gradient(#8470FF, #E6E6FA);
+    border-radius: 0 20px 20px 0;
+    height: 50%;
+    width: 40%;
+    z-index: 1;
+}
+
+/* The Image */
+.t_a {
+    width: 700px;
+    height: 400px;
+    border-radius: 20px 20px 20px 20px;
+    top: 24%;
+    left: 5%;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+}
+
+.battle_house {
+    width: 700px;
+    height: 400px;
+    border-radius: 20px 20px 20px 20px;
+    top: 24%;
+    left: 5%;
+    position: absolute;
+    align-items: center;
+    z-index: 2;
+}
+
+.map {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 3px;
+}
+
+
+iframe {
+    overflow: hidden;
+    left: -100%;
+}
+
+
+.tiles {
+    position: relative;
+    height:0;
+    width: 0;
+    border-style: solid;
+    border-width: 150px 150px 150px 150px;
+    border-color: #8470FF;
+    margin-left: 20px;
+    top: -120px;
+    border-radius: 20px 20px 20px 20px;
+} 
+.tile_2 {
+    position: relative;
+    height:0;
+    width: 0;
+    border-style: solid;
+    border-width: 150px 150px 150px 150px;
+    border-color: #8470FF;
+    margin-left: 31.3%;
+    top: -420px;
+    border-radius: 20px 20px 20px 20px;
+} 
+
+
+
+
+.espresso {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    top: 160px;
+    left: 3.2%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.espresso:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+.cat_decor {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    top: 160px;
+    left: 15%;
+    z-index: 1;
+    cursor: pointer;
+}
+.cat_decor:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+.tagline {
+    position: absolute;
+    font-family: Nugo Sans;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+.rsvp_form {
+    position: relative;
+    margin-left: 50%;
+    margin-top: -50px;
+}
+.reserve {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: Nugo Sans;
+}
+
+.shapes {
+    position: absolute;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    z-index: 1;
+  }
